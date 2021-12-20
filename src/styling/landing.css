@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainCont {
+  padding: 30px;
+  height: 100%;
+  background: linear-gradient(90deg, #cfd9df 0%, #e2ebf0 100%);
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  padding: 30px 0;
+  margin-bottom: 3rem;
+}
+.heading_Logo {
+  margin-right: 40px;
+  color: #4e4376;
+  font-family: "brown", sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.heading_text {
+  position: relative;
+  padding: 0 25px;
+  font-family: "brown", sans-serif;
+  font-size: 18px;
+  line-height: 1.14286;
+  color: #000000;
+  transition: color 0.2s;
+}
+.formCont {
+  margin: auto;
+  width: 98%;
+}
+.form {
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: 0 0 1px rgb(20 20 20 / 8%), 0 1px 8px 2px rgb(20 20 20 / 8%);
+  padding: 40px;
+  border-radius: 8px;
+}
+.header {
+  font-family: "brown", sans-serif;
+  font-weight: normal;
+  color: #171616;
+  margin-bottom: 3rem;
+  font-size: 24px;
+  line-height: 1.14286;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  height: 100%;
+}
+
+.form-row {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /* display: flex; */
+  /* margin: 0 -10px; */
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(50% - 20px);
+  width: calc(50% - 20px);
+  margin: 0 10px;
+}
+.label {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  color: #2a3a4f;
+}
+
+.input {
+  height: 48px;
+  /* padding: 0 14px; */
+  font-size: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #e6e8ec;
+  box-shadow: none;
+  background: none;
+  font-family: "brown", sans-serif;
+  color: #9c9c9c;
+  transition: border-color 0.2s;
+  outline: none;
+}
+.input input {
+  /* padding: 0 14px; */
+  font-size: 16px;
+  border-radius: 8px;
+  font-family: "brown", sans-serif;
+  color: #9c9c9c;
+}
+.input:active {
+  outline: red;
+}
+.select {
+}
+
+.formBtn {
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #10aa9f;
+  font-weight: 300;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+  font-family: "brown", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  color: #fcfcfd;
+  transition: all 0.2s;
+  outline: none;
+}
+.imgCont {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+.imgCont img {
+  width: 60px;
+  border: none;
+}
+/* RESULT */
+.resHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.resHeaderText {
+  font-family: "brown", sans-serif;
+  font-weight: normal;
+  color: #171616;
+  font-size: 24px;
+  line-height: 1.14286;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  height: 100%;
+  /* width: 20rem; */
+  display: inline-block;
+}
+.currencyInput {
+  width: 60%;
+  /* border: orange 1px solid; */
+  display: flex;
+  justify-content: flex-end;
+}
+.resultCont {
+  height: 100%;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.resultHolder {
+  padding: 0 20px;
+}
+.line {
+  border-left: #171616 2px solid;
+}
+.resultItem {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.resultTime {
+  font-family: "brown", sans-serif;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #4e4376;
+  font-size: 16px;
+}
+.resultAmount {
+  color: #454545;
+  font-family: "brown", sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 900px) {
+  .form-row {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .form-control {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    flex: 1;
+  }
+  .form .header {
+    font-size: 16px;
+  }
+  .currencyInput {
+    display: flex;
+  }
+  .resHeader {
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+  }
+  .resHeaderText {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .mainCont {
+    padding: 10px;
+  }
+  .heading_Logo {
+  }
+  .heading_text {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+  .form-control {
+    width: 95%;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .form {
+    padding: 20px 10px;
+  }
+  .currencyInput {
+    /* width: 100%; */
+  }
+}
